@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name = "Listener.TestListener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="D:/intellij_workspace/Angular-pom">
+        <classes>
+            <class name="Test.Hometest">
+                <methods>
+                    <include name="checkglobalfeed"/>
+                    <include name="checkyourfeed"/>
+                    <include name="checknewarticle"/>
+                    <include name="checksetting"/>
+                    <include name="checkuser"/>
+                </methods>
+            </class>
+            <class name="Test.NewArticletest">
+                <methods>
+                    <include name="publish"/>
+                </methods>
+            </class>
+            <class name="Test.Settingtest">
+                <methods>
+                    <include name="checkname"/>
+                    <include name="checkfirst"/>
+                    <include name="setbio"/>
+                    <include name="checkmail"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+            <class name="Test.TestSignup_Signin">
+                <methods>
+                    <include name="checksignup"/>
+                    <include name="checksignin"/>
+                    <include name="multiplelogin"/>
+                </methods>
+            </class>
+            <class name="Test.Usertest">
+                <methods>
+                    <include name="myarticle"/>
+                    <include name="favarticle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
